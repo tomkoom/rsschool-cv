@@ -1,30 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <title>Tomash Sugint CV</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <title>Tomash Sugint CV</title>
-</head>
+    <body>
+        <div class="ContentWrapper">
+            <div class="Main">
+                <h1>Tomash Sugint</h1>
+                <div class="divider7"></div>
+                <h3>Junior Frontend Developer / UI Designer</h3>
+                <div class="divider7"></div>
+                <p>Minsk, Belarus</p>
 
-<body>
-    <div class="ContentWrapper">
-        <div class="Main">
-            <h1>Tomash Sugint</h1>
-            <h3>Junior Frontend Developer / UI Designer</h3>
-            <p>Minsk, Belarus</p>
+
+                <!-- About -->
+                <div class="divider45"></div>
+                <h2>About</h2>
+                <div class="divider15"></div>
+                <p>
+                    I am a UI/UX designer with more than 3 years of experience
+                    in the UI/UX design field. Previously, I designed corporate
+                    web applications, design systems and there were many more
+                    design related tasks. For several months now, I was engaged
+                    in self-education, after that I discovered Rolling Scopes JS
+                    course and joined it. During my self-education period I have
+                    developed several single page applications, simple
+                    e-commerse store and social network using Redux framework.
+                    Currently I am focusing on completion of Rolling Scopes JS
+                    course and learn React.js in parallel. Check out my
+                    <a href="https://github.com/tomkoom" target="_blank"
+                        >GitHub
+                    </a>
+                    & feel free to contact me on any question.
+                </p>
+
+
+                <!-- Code examples -->
+                <div class="divider45"></div>
+                <h2>Code examples</h2>
+                <div class="divider15"></div>
+                <h4>Bit Counting</h4>
+                <div class="divider7"></div>
+                <p>
+                    Write a function that takes an integer as input, and returns
+                    the number of bits that are equal to one in the binary
+                    representation of that number. You can guarantee that input
+                    is non-negative.
+                </p>
+                <div class="divider7"></div>
+                <p>
+                    <i>Example:</i> The binary representation of
+                    <code>1234</code> is <code>10011010010</code>, so the
+                    function should return <code>5</code> in this case.
+                </p>
+                <div class="divider15"></div>
+                <pre>
+<code>function countBits(n) {
+    let arr = [];
+    let res;
+    
+    while (n !== 0) {
+        arr.push(n % 2);
+        n = Math.floor(n / 2);
+    }
+    
+    arr = arr.reverse();
+    res = arr.reduce((a, b) => a + b, 0);
+    return res;
+    };
+    
+console.log(countBits(1234));</code>
+                </pre>
+                <div class="divider15"></div>
+                <p><a href="https://www.codewars.com/users/tomkoom">Codewars profile</a></p>
+
+
+                <!-- Work experience -->
+                <div class="divider45"></div>
+                <h2>Work experience</h2>
+                <div class="divider15"></div>
+
+                <!-- End of main section -->
+            </div>
+
+            <div class="Side">
+                <div class="PhotoWrapper">
+                    <img class="Photo" src="img/photo.jpg" alt="Photo" />
+                </div>
+
+                <div class="divider15"></div>
+
+                <!-- <h2>Contacts</h2> -->
+                <div class="divider7"></div>
+
+                <ul>
+                    <li><b>Email:</b> tomash.sugint@gmail.com</li>
+                    <li>
+                        <b>Telegram:</b
+                        ><a
+                            href="https://t.me/tomkoom"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            > t.me/tomkoom</a
+                        >
+                    </li>
+                    <li>
+                        <b>GitHub:</b>
+                        <a
+                            href="https://github.com/tomkoom"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >github.com/tomkoom</a
+                        >
+                    </li>
+                    <li><b>Discord:</b> @tomkoom#0296</li>
+                </ul>
+            </div>
         </div>
-        <div class="Side">
-            <ul>
-                <li>Email: tomash.sugint@gmail.com</li>
-                <li>Telegram: <a href="https://t.me/tomkoom" target="_blank" rel="noopener noreferrer">t.me/tomkoom</a></li>
-                <li>GitHub: <a href="https://github.com/tomkoom" target="_blank" rel="noopener noreferrer">github.com/tomkoom</a></li>
-                <li>Discord: @tomkoom#0296</li>
-            </ul>
-        </div>
-    </div>
-</body>
-
+    </body>
 </html>
