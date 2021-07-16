@@ -62,10 +62,15 @@ p {
 	line-height: 150%;
 }
 
-.Contacts {
+.Social {
 	list-style-type: none;
 	padding: 0;
-	margin: 0;
+	margin: 4px 0 0 -16px;
+	display: flex;
+}
+
+.Social li {
+	padding: 0 12px;
 }
 
 ul {
@@ -143,4 +148,15 @@ code,
 pre,
 .Side {
 	border-radius: 4px;
+}
+
+.fab,
+.fas {
+	font-size: 32px;
+	color: #718096;
+}
+
+.fab:hover,
+.fas:hover {
+	color: #304ffe;
 }
