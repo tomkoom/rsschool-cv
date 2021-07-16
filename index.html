@@ -1,126 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-        <title>Tomash Sugint CV</title>
-    </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<title>Tomash Sugint CV</title>
+	</head>
 
-    <body>
-        <div class="ContentWrapper">
-            <div class="Main">
-                <h1>Tomash Sugint</h1>
-                <div class="divider7"></div>
-                <h3>Junior Frontend Developer / UI Designer</h3>
-                <div class="divider7"></div>
-                <p>Minsk, Belarus</p>
+	<body>
+		<div class="ContentWrapper">
+			<main>
+				<div class="Main">
+					<header>
+						<h1>Tomash Sugint</h1>
+						<div class="divider7"></div>
+						<h3>Junior Frontend Developer / UI Designer</h3>
+						<div class="divider7"></div>
+						<p>Minsk, Belarus</p>
+					</header>
 
+					<!-- About -->
+					<section>
+						<div class="divider45"></div>
+						<h2>About</h2>
+						<div class="divider15"></div>
+						<p>
+							I am a UI/UX designer with more than 3 years of
+							experience in the UI/UX design field. Previously, I
+							designed corporate web applications, design systems
+							and there were many more design related tasks. For
+							several months now, I was engaged in self-education,
+							after that I discovered Rolling Scopes JS course and
+							joined it. During my self-education period I have
+							developed several single page applications, simple
+							e-commerse store and social network using Redux
+							framework. Currently I am focusing on completion of
+							Rolling Scopes JS course and learn React.js in
+							parallel. Check out my
+							<a href="https://github.com/tomkoom" target="_blank"
+								>GitHub</a
+							>
+							& feel free to contact me on any question.
+						</p>
+					</section>
 
-                <!-- About -->
-                <div class="divider45"></div>
-                <h2>About</h2>
-                <div class="divider15"></div>
-                <p>
-                    I am a UI/UX designer with more than 3 years of experience
-                    in the UI/UX design field. Previously, I designed corporate
-                    web applications, design systems and there were many more
-                    design related tasks. For several months now, I was engaged
-                    in self-education, after that I discovered Rolling Scopes JS
-                    course and joined it. During my self-education period I have
-                    developed several single page applications, simple
-                    e-commerse store and social network using Redux framework.
-                    Currently I am focusing on completion of Rolling Scopes JS
-                    course and learn React.js in parallel. Check out my
-                    <a href="https://github.com/tomkoom" target="_blank"
-                        >GitHub
-                    </a>
-                    & feel free to contact me on any question.
-                </p>
-
-
-                <!-- Code examples -->
-                <div class="divider45"></div>
-                <h2>Code examples</h2>
-                <div class="divider15"></div>
-                <h4>Bit Counting</h4>
-                <div class="divider7"></div>
-                <p>
-                    Write a function that takes an integer as input, and returns
-                    the number of bits that are equal to one in the binary
-                    representation of that number. You can guarantee that input
-                    is non-negative.
-                </p>
-                <div class="divider7"></div>
-                <p>
-                    <i>Example:</i> The binary representation of
-                    <code>1234</code> is <code>10011010010</code>, so the
-                    function should return <code>5</code> in this case.
-                </p>
-                <div class="divider15"></div>
-                <pre>
+					<!-- Code examples -->
+					<section>
+						<div class="divider45"></div>
+						<h2>Code examples</h2>
+						<div class="divider15"></div>
+						<h4>Bit Counting</h4>
+						<div class="divider7"></div>
+						<p>
+							Write a function that takes an integer as input, and
+							returns the number of bits that are equal to one in
+							the binary representation of that number. You can
+							guarantee that input is non-negative.
+						</p>
+						<div class="divider7"></div>
+						<p>
+							<i>Example:</i> The binary representation of
+							<code>1234</code> is <code>10011010010</code>, so
+							the function should return <code>5</code> in this
+							case.
+						</p>
+						<div class="divider15"></div>
+						<pre>
 <code>function countBits(n) {
     let arr = [];
     let res;
     
     while (n !== 0) {
         arr.push(n % 2);
-        n = Math.floor(n / 2);
-    }
+        n = Math.floor(n / 2)
+    };
     
     arr = arr.reverse();
     res = arr.reduce((a, b) => a + b, 0);
-    return res;
-    };
+    return res
+};
     
 console.log(countBits(1234));</code>
-                </pre>
-                <div class="divider15"></div>
-                <p><a href="https://www.codewars.com/users/tomkoom">Codewars profile</a></p>
+                        </pre>
+						<div class="divider15"></div>
+						<p>
+							<a href="https://www.codewars.com/users/tomkoom"
+								>Codewars profile</a
+							>
+						</p>
+					</section>
 
+					<!-- Work experience -->
+					<section>
+						<div class="divider45"></div>
+						<h2>Work experience</h2>
+						<div class="divider15"></div>
+						<ul>
+							<li>
+								<b>UI/UX designer</b>
+								<br />
+								AGENTE · Full-time
+								<br />
+								<i>Jan 2019 – Nov 2019 · 11 mos</i>
+								<br />
+								<p>
+									Corporate software design, component library
+									and visual assets design, rapid prototyping,
+									user story mapping, ideation and
+									presentation of design solutions.
+								</p>
+								<p>
+									Visual design: blog illustrations, social
+									media covers, case study presentation.
+								</p>
+							</li>
+							<li>
+								<b>Product Designer</b>
+								<br />
+								CodeBlue Ventures · Full-time
+								<br />
+								<i>Jan 2019 – Sep 2019 · 9 mos</i>
+							</li>
+							<li>
+								<b>Graphic Designer / Web Designer</b>
+								<br />
+								Self Employed · Freelance
+								<br />
+								<i>Jun 2013 – Jan 2017 · 3 yrs 8 mos</i>
+							</li>
 
-                <!-- Work experience -->
-                <div class="divider45"></div>
-                <h2>Work experience</h2>
-                <div class="divider15"></div>
+							<li>
+								<b>Graphic Designer</b>
+								<br />
+								Agency of Visual Communications · Full-time
+								<br />
+								<i>Jan 2014 – Sep 2014 · 9 mos</i>
+								<p>Visual design, brand identites design.</p>
+							</li>
+						</ul>
+					</section>
 
-                <!-- End of main section -->
-            </div>
+					<!-- Education & Courses -->
+					<section>
+						<div class="divider45"></div>
+						<h2>Education & Courses</h2>
+						<div class="divider15"></div>
+						<ul>
+							<li>
+								<b>Rolling Scopes School</b>
+								<br />
+								JS / FRONT-END. STAGE 0
+								<br />
+								<i>Jul 2021 - Sep 2021 · 2 mos</i>
+							</li>
+							<li>
+								<b>Codecademy</b>
+								<br />
+								Build Websites from Scratch
+								<br />
+								<i>2015 - 2015</i>
+							</li>
+							<li>
+								<b>tilda.education</b>
+								<br />
+								Design in Digital Environment
+								<br />
+								<i>2014 - 2014</i>
+							</li>
+							<li>
+								<b>European Humanities University</b>
+								<br />
+								Bachelor’s degree · Bachelor of Audiovisual Arts
+								<br />
+								<i>2009 - 2013</i>
+							</li>
+						</ul>
+					</section>
 
-            <div class="Side">
-                <div class="PhotoWrapper">
-                    <img class="Photo" src="img/photo.jpg" alt="Photo" />
-                </div>
+					<!-- Languages -->
+					<section>
+						<div class="divider45"></div>
+						<h2>Languages</h2>
+						<div class="divider15"></div>
+						<ul>
+							<li>English: B1 (Intermediate English)</li>
+							<li>Russian (native)</li>
+							<li>German (beginner)</li>
+							<li>Lithuanian (beginner)</li>
+						</ul>
+					</section>
 
-                <div class="divider15"></div>
+					<!-- End of Main -->
+				</div>
+			</main>
 
-                <!-- <h2>Contacts</h2> -->
-                <div class="divider7"></div>
+			<aside>
+				<div class="Side">
+					<div class="PhotoWrapper">
+						<img class="Photo" src="img/photo.jpg" alt="Photo" />
+					</div>
 
-                <ul>
-                    <li><b>Email:</b> tomash.sugint@gmail.com</li>
-                    <li>
-                        <b>Telegram:</b
-                        ><a
-                            href="https://t.me/tomkoom"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            > t.me/tomkoom</a
-                        >
-                    </li>
-                    <li>
-                        <b>GitHub:</b>
-                        <a
-                            href="https://github.com/tomkoom"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >github.com/tomkoom</a
-                        >
-                    </li>
-                    <li><b>Discord:</b> @tomkoom#0296</li>
-                </ul>
-            </div>
-        </div>
-    </body>
+					<div class="divider15"></div>
+
+					<!-- Contacts -->
+					<div class="divider7"></div>
+
+					<ul class="Contacts">
+						<li><b>Email:</b> tomash.sugint@gmail.com</li>
+						<li>
+							<b>Telegram:</b>
+							<a
+								href="https://t.me/tomkoom"
+								target="_blank"
+								rel="noopener noreferrer"
+								>t.me/tomkoom</a
+							>
+						</li>
+						<li>
+							<b>GitHub:</b>
+							<a
+								href="https://github.com/tomkoom"
+								target="_blank"
+								rel="noopener noreferrer"
+								>github.com/tomkoom</a
+							>
+						</li>
+						<li><b>Discord:</b> @tomkoom#0296</li>
+					</ul>
+
+					<!-- Skills -->
+					<div class="divider30"></div>
+					<h3>Skills</h3>
+					<div class="divider15"></div>
+					<ul>
+						<li>JavaScript (ES6+)</li>
+						<li>React.js</li>
+						<li>CSS / CSS modules</li>
+						<li>HTML</li>
+						<li>Git</li>
+					</ul>
+					<div class="divider30"></div>
+					<h4>Other skills</h4>
+					<div class="divider15"></div>
+					<ul>
+						<li>UI design (Figma)</li>
+						<li>Graphic design (Adobe Illustrator)</li>
+						<li>Rapid prototyping</li>
+						<li>Design systems</li>
+						<li>Weblflow</li>
+					</ul>
+					<!-- End of Side -->
+				</div>
+			</aside>
+			<!-- End of side ContentWrapper -->
+		</div>
+	</body>
 </html>
