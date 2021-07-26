@@ -63,8 +63,8 @@ p {
 }
 
 .Contacts {
-    list-style-type: none;
-    margin: 0;
+	list-style-type: none;
+	margin: 0;
 }
 
 .Social {
@@ -166,3 +166,26 @@ pre,
 	color: #304ffe;
 }
 
+.Footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	background-color: #edf2f7;
+	/* box-shadow: 0px -1px 0px 0px #edf2f7; */
+}
+
+.FooterContent {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin: 80px 0;
+}
+
+.RSLogo {
+	height: 32px;
+}
+
+.Middot {
+	color: #718096;
+}
