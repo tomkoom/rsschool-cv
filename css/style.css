@@ -1,20 +1,5 @@
 :root {
-	--light-green-700: #64dd17;
-
-	--green-700: #00c853;
-
-	--light-blue-400: #00b0ff;
-	--light-blue-700: #0091ea;
-
-	--blue-400: #2979ff;
-
-	--black: #2e3440;
-	--blue: #4078f2;
-	--blue2: #81a1c1;
-	--green: #00695c;
-
 	--gray-700: #2d3748;
-	--green-500: #38a169;
 	--blue-500: #3182ce;
 	--gray-100: #edf2f7;
 
@@ -215,13 +200,15 @@ code {
 
 /* LINKS AND LINK BLOCKS */
 
-
+.project_img {
+	max-width: 100%;
+	border-radius: 8px;
+}
 
 a {
 	text-decoration: none;
 	color: var(--gray-700);
 }
-
 
 .link-block {
 	display: inline-block;
