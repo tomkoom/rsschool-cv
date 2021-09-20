@@ -46,8 +46,6 @@ body {
 	flex-direction: column;
 	width: 370px;
 	gap: 24px;
-	/* background-color: #edf2f7;
-	padding: 30px; */
 }
 
 /* NAV */
@@ -97,10 +95,6 @@ h4 {
 }
 
 .projects-container h4 {
-	/* background: var(--gradient);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent; */
 	display: inline;
 }
 
