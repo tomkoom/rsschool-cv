@@ -6,12 +6,25 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<title>Tomash Sugint CV</title>
+
+		<!-- favicon -->
+		<link
+			rel="icon"
+			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👻</text></svg>"
+		/>
+
+		<!-- FontAwesome -->
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
 			integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
+		/>
+		<!-- higlight.js -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/gradient-dark.min.css"
 		/>
 	</head>
 
@@ -22,7 +35,7 @@
 					<header>
 						<h1>Tomash Sugint</h1>
 						<div class="divider7"></div>
-						<h3>Frontend Developer</h3>
+						<h3>Frontend / JS Developer</h3>
 						<div class="divider7"></div>
 						<p>Minsk, Belarus</p>
 					</header>
@@ -33,8 +46,10 @@
 						<h2>About</h2>
 						<div class="divider15"></div>
 						<p>
-							I am a UI/UX designer with more than 4 years of
-							experience in the UI/UX design field. Previously, I
+							Hello! I'm Tomash, a self-educating frontend
+							developer with previous experience in UI/UX design.
+							I have been engaged in frontend development from
+							mid-spring 2021. (описать опыт) Previously, I
 							designed corporate web applications, design systems
 							and there were many more design related tasks. For
 							several months now, I was engaged in self-education,
@@ -45,7 +60,10 @@
 							framework. Currently I am focusing on completion of
 							Rolling Scopes JS course and learn React.js in
 							parallel. Check out my
-							<a href="https://github.com/tomkoom" target="_blank"
+							<a
+								href="https://github.com/tomkoom"
+								target="_blank"
+								class="link"
 								>GitHub</a
 							>
 							& feel free to contact me on any question.
@@ -74,28 +92,39 @@
 						</p>
 						<div class="divider15"></div>
 						<pre>
-<code>function countBits(n) {
-    let arr = [];
-    let res;
-    
-    while (n !== 0) {
-        arr.push(n % 2);
-        n = Math.floor(n / 2)
-    };
-    
-    arr = arr.reverse();
-    res = arr.reduce((a, b) => a + b, 0);
-    return res
-};
-    
-console.log(countBits(1234));</code>
-                        </pre>
+<code class="javascript">function countBits(n) {
+  	let arr = [];
+  	const res;
+
+  	while (n != 0) {
+    	arr.push(n % 2);
+    	n = Math.floor(n / 2);
+  	}
+
+  	res = arr.reduce((a, b) =&gt; a + b, 0);
+  	return res;
+};</code></pre>
 						<div class="divider15"></div>
-						<p>
-							<a href="https://www.codewars.com/users/tomkoom"
-								>Codewars profile</a
+
+						<div class="codewars">
+							Codewars profile:
+							<a
+								href="https://www.codewars.com/users/tomkoom"
+								target="_blank"
+								rel="noreferrer noopener"
 							>
-						</p>
+								<img
+									src="https://www.codewars.com/users/tomkoom/badges/small"
+									alt="Codewars badge"
+								/>
+							</a>
+						</div>
+					</section>
+
+					<section>
+						<div class="divider45"></div>
+						<h2>Projects</h2>
+						<div class="divider15"></div>
 					</section>
 
 					<!-- Work experience -->
@@ -160,6 +189,24 @@ console.log(countBits(1234));</code>
 								JS / FRONT-END. STAGE 0
 								<br />
 								<i>Jul 2021 - Sep 2021 · 2 mos</i>
+								<br />
+								<a
+									href="https://app.rs.school/certificate/apc9wcvs"
+									class="link-block link"
+									target="_blank"
+									rel="noreferrer noopener"
+								>
+									<div class="link-block__div">
+										<class
+											class="
+												far
+												fa-check-circle
+												small-icon
+											"
+										></class>
+										Certificate
+									</div>
+								</a>
 							</li>
 							<li>
 								<b>Codecademy</b>
@@ -191,7 +238,7 @@ console.log(countBits(1234));</code>
 						<h2>Languages</h2>
 						<div class="divider15"></div>
 						<ul>
-							<li>English: B1 (Intermediate English)</li>
+							<li>English: A2 (Pre Intermediate)</li>
 							<li>Russian (native)</li>
 							<li>German (beginner)</li>
 							<li>Lithuanian (beginner)</li>
@@ -227,9 +274,6 @@ console.log(countBits(1234));</code>
 								><i class="fab fa-telegram-plane"></i
 							></a>
 						</li>
-						<!-- <li>
-							<a href="#"><i class="fab fa-discord"></i></a>
-						</li> -->
 						<li>
 							<a href="https://github.com/tomkoom"
 								><i class="fab fa-github"></i
@@ -252,11 +296,13 @@ console.log(countBits(1234));</code>
 					<h4>Other skills</h4>
 					<div class="divider15"></div>
 					<ul>
-						<li>UI design (Figma)</li>
+						<li>UI/UX design</li>
+						<li>Graphic design</li>
+						<!-- <li>UI design (Figma)</li>
 						<li>Graphic design (Adobe Illustrator)</li>
 						<li>Rapid prototyping</li>
 						<li>Design systems</li>
-						<li>Weblflow</li>
+						<li>Weblflow</li> -->
 					</ul>
 					<!-- End of Side -->
 				</div>
@@ -266,26 +312,52 @@ console.log(countBits(1234));</code>
 
 		<!-- Footer -->
 		<footer>
-			<div class="Footer">
-				<div class="FooterContent">
-					<p>
+			<div class="footer">
+				<ul class="footer_list">
+					<li>
 						<a
 							href="https://github.com/tomkoom"
 							rel="noopener noreferrer"
+							class="link"
 							>GitHub</a
 						>
-					</p>
-					<p class="Middot">&#183;</p>
-					<p>2021</p>
-					<p class="Middot">&#183;</p>
-					<a href="https://rs.school/js/" rel="noopener noreferrer">
+					</li>
+
+					<li>&#183;</li>
+					<li>
+						<a
+							href="https://rs.school/js/"
+							rel="noopener noreferrer"
+						>
+							<img
+								class="RSLogo"
+								src="img/rs_school_js.svg"
+								alt="RS School Logo"
+						/></a>
+					</li>
+					<li>&#183;</li>
+					<li>
 						<img
-							class="RSLogo"
-							src="img/rs_school_js.svg"
-							alt="RS School Logo"
-					/></a>
-				</div>
+							src="img/pop-cat.gif"
+							alt="pop-cat"
+							class="pop-cat"
+						/>
+					</li>
+					<li>&#183;</li>
+					<li><p>2021</p></li>
+				</ul>
 			</div>
 		</footer>
+
+		<!-- SCRIPTS -->
+
+		<script src="js/score.js"></script>
+
+		<!-- highlight.js -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+		<script src="/path/to/highlight.min.js"></script>
+		<script>
+			hljs.highlightAll();
+		</script>
 	</body>
 </html>

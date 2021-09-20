@@ -1,3 +1,36 @@
+:root {
+	--light-green-700: #64dd17;
+
+	--green-700: #00c853;
+
+	--light-blue-400: #00b0ff;
+	--light-blue-700: #0091ea;
+
+	--blue-400: #2979ff;
+
+	--black: #2e3440;
+	--blue: #4078f2;
+	--blue2: #81a1c1;
+	--green: #00695c;
+
+	--gray-700: #2d3748;
+	--green-500: #38a169;
+	--blue-500: #3182ce;
+	--gray-100: #edf2f7;
+
+	--white: #fff;
+
+	--gradient: linear-gradient(
+		60deg,
+		#ffe701 -1.41%,
+		#fa51d3 34.12%,
+		#10d9ed 70.19%,
+		#52ff53 101.95%
+	);
+}
+
+/* https://chakra-ui.com/docs/theming/theme */
+
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,600;0,800;1,400&display=swap");
 
 /* @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,600;0,700;1,400&display=swap'); */
@@ -9,7 +42,7 @@ html {
 
 body {
 	font-family: "Karla", sans-serif;
-	color: #171923;
+	color: var(--gray-700);
 }
 
 .ContentWrapper {
@@ -32,6 +65,8 @@ body {
 	padding: 30px; */
 }
 
+/* TYPOGRAPHY */
+
 h1,
 h2,
 h3,
@@ -41,6 +76,11 @@ h4 {
 
 h1 {
 	font-size: 35.16px;
+	background: var(--gradient);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: inline;
 }
 
 h2 {
@@ -70,12 +110,12 @@ p {
 .Social {
 	list-style-type: none;
 	padding: 0;
-	margin: 4px 0 0 -16px;
+	margin: 4px 0 0 -8px;
 	display: flex;
 }
 
 .Social li {
-	padding: 0 12px;
+	padding: 0 8px;
 }
 
 ul {
@@ -98,15 +138,6 @@ i {
 
 b {
 	font-weight: 600;
-}
-
-a {
-	/* text-decoration: none; */
-	color: #171923;
-}
-
-a:hover {
-	color: #304ffe;
 }
 
 .Photo {
@@ -136,8 +167,6 @@ a:hover {
 }
 
 pre {
-	background-color: #edf2f7;
-	padding: 15px;
 	font-size: 18px;
 	margin: 0;
 }
@@ -145,47 +174,102 @@ pre {
 code {
 	padding: 2px 4px;
 	margin: 0;
-	background-color: #edf2f7;
 	font-family: "Inconsolata", monospace;
+	background-color: var(--gray-100);
+	border-radius: 4px;
 }
 
-code,
-pre,
-.Side {
+.Middot {
+	color: #718096;
+}
+
+/* LINKS AND LINK BLOCKS */
+
+.link-block {
+	display: inline-block;
+}
+
+.link-block__div {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	line-height: 125%;
+}
+
+.link {
+	text-decoration: none;
+	/* background: var(--gradient);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; */
+	background: var(--gradient);
+	padding: 4px;
 	border-radius: 4px;
+	color: var(--white);
+}
+
+.link:hover {
+	color: var(--white);
 }
 
 .fab,
 .fas {
-	font-size: 32px;
-	color: #718096;
+	font-size: 24px;
+	background: var(--gradient);
+	padding: 6px;
+	color: var(--white);
+	border-radius: 8px;
 }
 
+/* a:hover,
 .fab:hover,
 .fas:hover {
-	color: #304ffe;
+	background: var(--gradient);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+} */
+
+.small-icon {
+	font-size: 20px;
 }
 
-.Footer {
+.codewars {
+	display: flex;
+	/* align-items: center; */
+	gap: 10px;
+}
+
+/* FOOTER */
+
+.footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	background-color: #edf2f7;
-	/* box-shadow: 0px -1px 0px 0px #edf2f7; */
-}
-
-.FooterContent {
-	display: flex;
-	align-items: center;
-	gap: 12px;
-	margin: 80px 0;
 }
 
 .RSLogo {
 	height: 32px;
 }
 
-.Middot {
-	color: #718096;
+.footer_list {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	padding: 30px 0 90px 0;
+}
+
+.pop-cat {
+	height: 32px;
+}
+
+.link-block__div .far {
+	color: white;
+}
+
+
+@media screen {
+	
 }
