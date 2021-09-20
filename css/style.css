@@ -32,9 +32,6 @@
 /* https://chakra-ui.com/docs/theming/theme */
 
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,600;0,800;1,400&display=swap");
-
-/* @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,600;0,700;1,400&display=swap'); */
-
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
 html {
 	font-size: 18px;
@@ -47,7 +44,7 @@ body {
 
 .ContentWrapper {
 	max-width: 1200px;
-	margin: 80px auto;
+	margin: 0 auto;
 	display: flex;
 	gap: 30px;
 	padding: 15px;
@@ -59,10 +56,27 @@ body {
 	max-width: 770px;
 }
 
-.Side {
+.side {
+	display: flex;
+	flex-direction: column;
 	width: 370px;
+	gap: 24px;
 	/* background-color: #edf2f7;
 	padding: 30px; */
+}
+
+/* NAV */
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 24px 0;
+}
+
+.nav {
+	max-width: 1200px;
+	width: 100%;
 }
 
 /* TYPOGRAPHY */
@@ -93,13 +107,28 @@ h3 {
 }
 
 h4 {
-	font-size: 18px;
+	font-size: 22.5px;
 	font-weight: 600;
+}
+
+.projects-container h4 {
+	/* background: var(--gradient);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; */
+	display: inline;
 }
 
 p {
 	margin: 0;
 	line-height: 150%;
+}
+
+.side-info {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	flex-wrap: wrap;
 }
 
 .Contacts {
@@ -110,7 +139,7 @@ p {
 .Social {
 	list-style-type: none;
 	padding: 0;
-	margin: 4px 0 0 -8px;
+	margin: 0 -8px;
 	display: flex;
 }
 
@@ -119,13 +148,14 @@ p {
 }
 
 ul {
-	margin: 0 0 0 20px;
+	margin: 0;
 	padding: 0;
+	list-style-type: none;
 }
 
 li {
-	line-height: 175%;
-	margin-bottom: 7px;
+	line-height: 150%;
+	margin-bottom: 8px;
 }
 
 li:last-child {
@@ -176,7 +206,7 @@ code {
 	margin: 0;
 	font-family: "Inconsolata", monospace;
 	background-color: var(--gray-100);
-	border-radius: 4px;
+	border-radius: 8px;
 }
 
 .Middot {
@@ -184,6 +214,14 @@ code {
 }
 
 /* LINKS AND LINK BLOCKS */
+
+
+
+a {
+	text-decoration: none;
+	color: var(--gray-700);
+}
+
 
 .link-block {
 	display: inline-block;
@@ -236,6 +274,7 @@ code {
 
 .codewars {
 	display: flex;
+	flex-wrap: wrap;
 	/* align-items: center; */
 	gap: 10px;
 }
@@ -254,8 +293,8 @@ code {
 }
 
 .footer_list {
-	list-style-type: none;
 	display: flex;
+	list-style-type: none;
 	align-items: center;
 	gap: 15px;
 	padding: 30px 0 90px 0;
@@ -269,7 +308,58 @@ code {
 	color: white;
 }
 
+/* PROJECTS */
 
-@media screen {
-	
+.projects-container a {
+	text-decoration: none;
+}
+
+.projects-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	grid-gap: 24px;
+}
+
+.projects-container__item {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	background-color: var(--gray-100);
+	padding: 16px;
+	border-radius: 8px;
+}
+
+@media screen and (max-width: 1024px) {
+	.ContentWrapper {
+		flex-direction: column-reverse;
+	}
+
+	.side {
+		align-items: flex-start;
+		align-items: center;
+		width: 100%;
+	}
+
+	.side-info {
+		flex-direction: row;
+	}
+
+	aside {
+		width: 100%;
+	}
+
+	pre {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 512px) {
+	.footer_list {
+		flex-direction: column;
+		gap: 0;
+	}
+
+	pre {
+		font-size: 9px;
+	}
 }
