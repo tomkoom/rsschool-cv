@@ -5,13 +5,7 @@
 
 	--white: #fff;
 
-	--gradient: linear-gradient(
-		60deg,
-		#ffe701 -1.41%,
-		#fa51d3 34.12%,
-		#10d9ed 70.19%,
-		#52ff53 101.95%
-	);
+	--gradient: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
 }
 
 /* https://chakra-ui.com/docs/theming/theme */
